@@ -1,0 +1,653 @@
+.landing-page {
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+}
+
+.landing-page .div {
+    background-color: #ffffff;
+    overflow: hidden;
+    width: 1440px;
+    height: 3344px;
+    position: relative;
+}
+
+.landing-page .overlap {
+    position: absolute;
+    width: 100%;
+}
+
+.landing-page .header {
+    position: absolute;
+    width: 100%;
+    height: 800px;
+    background-color: transparent;
+}
+
+.landing-page .overlap-group {
+    width: 100%;
+    height: 758px;
+    background-image: url(img/imagem-header.jpg);
+    background-size: 100% 100%;
+    border-bottom-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+}
+
+.landing-page .text-wrapper {
+    position: absolute;
+    text-align: center;
+    top: 350px;
+    left: 250px;
+    font-family: "Open Sans-ExtraBold", Helvetica;
+    font-weight: 800;
+    color: #ffffff;
+    font-size: 56px;
+}
+
+.landing-page .p {
+    position: absolute;
+    width: 1265px;
+    top: 420px;
+    left: 87px;
+    font-family: "Open Sans-SemiBold", Helvetica;
+    font-weight: 500;
+    color: #ffffff;
+    font-size: 32px;
+    text-align: center;
+}
+
+.landing-page .cabecalho {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 80px;
+    align-items: flex;
+    gap: 10px;
+    border-bottom: 1px solid;
+    border-color: #8e8e8e;
+}
+
+.landing-page .retangulo-cabecalho {
+    position: relative;
+    width: 100%;
+    height: 80px;
+    background-color: #ffffff;
+}
+
+.landing-page .itens-cabecalho {
+    display: inline-flex;
+    align-items: space-between;
+}
+
+.landing-page .icon-logo {
+    position: relative;
+    width: 72px;
+    height: 72px;
+}
+
+.landing-page .navbar {
+    display: inline-flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.landing-page .text-wrapper-2 {
+    position: relative;
+    width: fit-content;
+    font-family: "Open Sans-Regular", Helvetica;
+    font-weight: 400;
+    color: #ff3f79;
+    font-size: 24px;
+}
+
+.landing-page .text-wrapper-3 {
+    position: relative;
+    width: fit-content;
+    font-family: "Open Sans-Regular", Helvetica;
+    font-weight: 400;
+    color: #000000;
+    font-size: 24px;
+}
+
+.landing-page .viagens-recentes {
+    position: absolute;
+    width: 1326px;
+    height: 631px;
+    top: 794px;
+    left: 58px;
+}
+
+.landing-page .viagens-populares {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    position: absolute;
+    top: 93px;
+}
+
+.landing-page .frame {
+    display: flex;
+    width: 1324px;
+    align-items: flex-start;
+    gap: 62px;
+    position: relative;
+    flex: 0 0 auto;
+}
+
+.landing-page .img {
+    position: relative;
+    width: 400px;
+    height: 474px;
+    object-fit: cover;
+}
+
+.landing-page .los-angeles-grupo {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    position: absolute;
+    top: 360px;
+    left: 924px;
+}
+
+.landing-page .text-wrapper-4 {
+    position: relative;
+    width: fit-content;
+    margin-top: -1px;
+    font-family: "Open Sans-Bold", Helvetica;
+    font-weight: 700;
+    color: #ffffff;
+    font-size: 40px;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+.landing-page .line {
+    position: relative;
+    width: 400.01px;
+    height: 1.47px;
+    object-fit: cover;
+}
+
+.landing-page .text-wrapper-5 {
+    position: relative;
+    width: fit-content;
+    font-family: "Open Sans-Regular", Helvetica;
+    font-weight: 400;
+    color: #ffffff;
+    font-size: 20px;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+.landing-page .orlando-grupo {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    position: absolute;
+    top: 360px;
+    left: 0;
+}
+
+.landing-page .las-vegas-grupo {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    position: absolute;
+    top: 360px;
+    left: 462px;
+}
+
+.landing-page .text-wrapper-6 {
+    position: absolute;
+    width: 335px;
+    top: 0;
+    left: 0;
+    font-family: "Open Sans-SemiBold", Helvetica;
+    font-weight: 600;
+    color: #ff3f79;
+    font-size: 40px;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+.landing-page .ver-todas-as-viagens {
+    position: absolute;
+    width: 293px;
+    height: 38px;
+    top: 593px;
+    left: 1012px;
+}
+
+.landing-page .ver-todas-as-viagens-2 {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    position: relative;
+}
+
+.landing-page .text-wrapper-7 {
+    position: relative;
+    width: fit-content;
+    margin-top: -1px;
+    font-family: "Open Sans-Light", Helvetica;
+    font-weight: 300;
+    color: #000000;
+    font-size: 28px;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+.landing-page .seta {
+    position: relative;
+    width: 31px;
+    height: 29px;
+}
+
+.landing-page .pagina-formulario {
+    position: absolute;
+    width: 1440px;
+    height: 1052px;
+    top: 2345px;
+    left: 0;
+}
+
+.landing-page .overlap-2 {
+    position: relative;
+    width: 1454px;
+    height: 1052px;
+}
+
+.landing-page .formulario {
+    position: absolute;
+    width: 1454px;
+    height: 1052px;
+    top: 0;
+    left: 0;
+}
+
+.landing-page .overlap-group-2 {
+    position: relative;
+    width: 1440px;
+    height: 1052px;
+    background-color: #f3f3f3;
+    border-radius: 50px;
+}
+
+.landing-page .caixa-formulario {
+    position: absolute;
+    width: 770px;
+    height: 908px;
+    top: 41px;
+    left: 570px;
+    background-color: #ffffff;
+    border-radius: 20px;
+}
+
+.landing-page .text-wrapper-8 {
+    position: absolute;
+    top: 70px;
+    left: 831px;
+    font-family: "Open Sans-SemiBold", Helvetica;
+    font-weight: 600;
+    color: #ff3f79;
+    font-size: 40px;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+.landing-page .text-wrapper-9 {
+    position: absolute;
+    width: 546px;
+    top: 132px;
+    left: 683px;
+    font-family: "Open Sans-Regular", Helvetica;
+    font-weight: 400;
+    color: #8e8e8e;
+    font-size: 24px;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+.landing-page .caixa-nome {
+    position: absolute;
+    width: 674px;
+    height: 58px;
+    top: 229px;
+    left: 619px;
+    border-radius: 50px;
+    border: 1px solid;
+    border-color: #8e8e8e;
+}
+
+.landing-page .caixa-email {
+    position: absolute;
+    width: 674px;
+    height: 58px;
+    top: 333px;
+    left: 619px;
+    border-radius: 50px;
+    border: 1px solid;
+    border-color: #8e8e8e;
+}
+
+.landing-page .caixa-assunto {
+    position: absolute;
+    width: 674px;
+    height: 58px;
+    top: 437px;
+    left: 619px;
+    border-radius: 50px;
+    border: 1px solid;
+    border-color: #8e8e8e;
+}
+
+.landing-page .caixa-telefone {
+    position: absolute;
+    width: 674px;
+    height: 58px;
+    top: 541px;
+    left: 619px;
+    border-radius: 50px;
+    border: 1px solid;
+    border-color: #8e8e8e;
+}
+
+.landing-page .caixa-mensagem {
+    position: absolute;
+    width: 674px;
+    height: 186px;
+    top: 645px;
+    left: 619px;
+}
+
+.landing-page .text-wrapper-10 {
+    position: absolute;
+    top: 241px;
+    left: 640px;
+    font-family: "Open Sans-Regular", Helvetica;
+    font-weight: 400;
+    color: #8e8e8e;
+    font-size: 24px;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+.landing-page .text-wrapper-11 {
+    position: absolute;
+    top: 345px;
+    left: 641px;
+    font-family: "Open Sans-Regular", Helvetica;
+    font-weight: 400;
+    color: #8e8e8e;
+    font-size: 24px;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+.landing-page .text-wrapper-12 {
+    position: absolute;
+    top: 449px;
+    left: 641px;
+    font-family: "Open Sans-Regular", Helvetica;
+    font-weight: 400;
+    color: #8e8e8e;
+    font-size: 24px;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+.landing-page .text-wrapper-13 {
+    position: absolute;
+    top: 553px;
+    left: 639px;
+    font-family: "Open Sans-Regular", Helvetica;
+    font-weight: 400;
+    color: #8e8e8e;
+    font-size: 24px;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+.landing-page .text-wrapper-14 {
+    position: absolute;
+    top: 657px;
+    left: 640px;
+    font-family: "Open Sans-Regular", Helvetica;
+    font-weight: 400;
+    color: #8e8e8e;
+    font-size: 24px;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+.landing-page .botao {
+    display: inline-flex;
+    align-items: flex-start;
+    position: absolute;
+    top: 865px;
+    left: 894px;
+    border-radius: 50px;
+}
+
+.landing-page .enviar-wrapper {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 8px 28px;
+    position: relative;
+    flex: 0 0 auto;
+    background-color: #ff3f79;
+    border-radius: 20px;
+}
+
+.landing-page .enviar {
+    position: relative;
+    width: fit-content;
+    margin-top: -4px;
+    font-family: "Roboto-SemiBold", Helvetica;
+    font-weight: 600;
+    color: #ffffff;
+    font-size: 24px;
+    letter-spacing: 0;
+    line-height: normal;
+    white-space: nowrap;
+}
+
+.landing-page .onde-nos-encontrar {
+    display: flex;
+    flex-direction: column;
+    width: 387px;
+    align-items: center;
+    gap: 36px;
+    position: absolute;
+    top: 240px;
+    left: 68px;
+}
+
+.landing-page .icone-rodape {
+    position: relative;
+    width: 172px;
+    height: 170px;
+}
+
+.landing-page .onde-nos-encontrar-2 {
+    position: relative;
+    width: 391px;
+    height: 204.58px;
+    margin-right: -4px;
+}
+
+.landing-page .social-media {
+    position: absolute;
+    width: 76px;
+    height: 32px;
+    top: 173px;
+    left: 156px;
+}
+
+.landing-page .contato {
+    position: absolute;
+    width: 352px;
+    top: 71px;
+    left: 17px;
+    font-family: "Open Sans-Light", Helvetica;
+    font-weight: 300;
+    color: #000000;
+    font-size: 24px;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: 25px;
+}
+
+.landing-page .text-wrapper-15 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-family: "Open Sans-SemiBold", Helvetica;
+    font-weight: 600;
+    color: #ff3f79;
+    font-size: 40px;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+.landing-page .galeria-de-fotos {
+    position: absolute;
+    width: 1328px;
+    height: 804px;
+    top: 1470px;
+    left: 58px;
+}
+
+.landing-page .text-wrapper-16 {
+    position: absolute;
+    width: 307px;
+    top: 0;
+    left: 0;
+    font-family: "Open Sans-SemiBold", Helvetica;
+    font-weight: 600;
+    color: #ff3f79;
+    font-size: 40px;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+.landing-page .galeria {
+    top: 80px;
+    left: 0;
+    position: absolute;
+    width: 320px;
+    height: 322px;
+    object-fit: cover;
+}
+
+.landing-page .galeria-2 {
+    top: 80px;
+    left: 335px;
+    position: absolute;
+    width: 320px;
+    height: 322px;
+    object-fit: cover;
+}
+
+.landing-page .galeria-3 {
+    top: 80px;
+    left: 669px;
+    position: absolute;
+    width: 320px;
+    height: 322px;
+    object-fit: cover;
+}
+
+.landing-page .galeria-4 {
+    top: 80px;
+    left: 1004px;
+    position: absolute;
+    width: 320px;
+    height: 322px;
+    object-fit: cover;
+}
+
+.landing-page .galeria-5 {
+    top: 418px;
+    left: 0;
+    position: absolute;
+    width: 320px;
+    height: 322px;
+    object-fit: cover;
+}
+
+.landing-page .galeria-6 {
+    top: 418px;
+    left: 335px;
+    position: absolute;
+    width: 320px;
+    height: 322px;
+    object-fit: cover;
+}
+
+.landing-page .galeria-7 {
+    top: 418px;
+    left: 669px;
+    position: absolute;
+    width: 320px;
+    height: 322px;
+    object-fit: cover;
+}
+
+.landing-page .div-wrapper {
+    position: absolute;
+    width: 320px;
+    height: 322px;
+    top: 418px;
+    left: 1004px;
+    background-image: url(img/galeria8.jpg);
+    background-size: cover;
+    background-position: 50% 50%;
+}
+
+.landing-page .text-wrapper-17 {
+    position: absolute;
+    top: 117px;
+    left: 86px;
+    font-family: "Open Sans-SemiBold", Helvetica;
+    font-weight: 600;
+    color: #ffffff;
+    font-size: 64px;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+.landing-page .ver-todas-as-fotos {
+    display: flex;
+    width: 280px;
+    align-items: center;
+    gap: 5px;
+    position: absolute;
+    top: 766px;
+    left: 1045px;
+}
