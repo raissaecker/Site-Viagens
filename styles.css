@@ -1,21 +1,8 @@
-.landing-page {
+.pagina {
     background-color: #ffffff;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
-    width: 100%;
-}
-
-.landing-page .div {
-    background-color: #ffffff;
-    overflow: hidden;
-    width: 1440px;
-    height: 3344px;
-    position: relative;
-}
-
-.landing-page .overlap {
-    position: absolute;
     width: 100%;
 }
 
@@ -26,20 +13,37 @@
     background-color: transparent;
 }
 
+.container {
+    position: relative;
+    display: inline-block;
+}
+
 .landing-page .overlap-group {
     width: 100%;
-    height: 758px;
+    height: 700px;
     background-image: url(img/imagem-header.jpg);
     background-size: 100% 100%;
     border-bottom-right-radius: 50px;
     border-bottom-left-radius: 50px;
 }
 
+div.sobreposicao-header {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 700px;
+    border-bottom-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
 .landing-page .text-wrapper {
     position: absolute;
     text-align: center;
-    top: 350px;
-    left: 250px;
+    width: 100%;
+    top: 270px;
     font-family: "Open Sans-ExtraBold", Helvetica;
     font-weight: 800;
     color: #ffffff;
@@ -48,11 +52,10 @@
 
 .landing-page .p {
     position: absolute;
-    width: 1265px;
-    top: 420px;
-    left: 87px;
-    font-family: "Open Sans-SemiBold", Helvetica;
-    font-weight: 500;
+    width: 100%;
+    top: 315px;
+    font-family: "Open Sans-Regular", Helvetica;
+    font-weight: 300;
     color: #ffffff;
     font-size: 32px;
     text-align: center;
@@ -60,13 +63,11 @@
 
 .landing-page .cabecalho {
     display: flex;
-    flex-direction: column;
-    width: 100%;
-    height: 80px;
-    align-items: flex;
-    gap: 10px;
-    border-bottom: 1px solid;
-    border-color: #8e8e8e;
+    height: 70px;
+    align-items: center;
+    border-bottom: 1px solid #d8d8d8;
+    justify-content: space-between;
+    padding-inline: 20px;
 }
 
 .landing-page .retangulo-cabecalho {
@@ -78,23 +79,33 @@
 
 .landing-page .itens-cabecalho {
     display: inline-flex;
-    align-items: space-between;
+    align-items: flex-end;
+    vertical-align: middle;
 }
 
-.landing-page .icon-logo {
-    position: relative;
+.landing-page .cabecalho .logo {
+    display: inline-block;
     width: 72px;
     height: 72px;
+    align-items: flex-start;
 }
 
-.landing-page .navbar {
-    display: inline-flex;
-    align-items: center;
-    justify-content: flex-end;
+.landing-page .navbar li {
+    display: inline-block;
+    padding: 10px;
+    justify-content: space-between;
+}
+
+.landing-page .navbar li a {
+    text-decoration: none;
+    color: #000000;
+}
+
+.landing-page .navbar li a:hover {
+    color: #ff3f79;
 }
 
 .landing-page .text-wrapper-2 {
-    position: relative;
     width: fit-content;
     font-family: "Open Sans-Regular", Helvetica;
     font-weight: 400;
@@ -113,10 +124,11 @@
 
 .landing-page .viagens-recentes {
     position: absolute;
-    width: 1326px;
+    width: 100%;
     height: 631px;
-    top: 794px;
-    left: 58px;
+    top: 840px;
+    align-items: center;
+    margin-left: 8px;
 }
 
 .landing-page .viagens-populares {
@@ -126,23 +138,57 @@
     justify-content: center;
     gap: 10px;
     position: absolute;
-    top: 93px;
+    top: 92px;
 }
 
 .landing-page .frame {
     display: flex;
-    width: 1324px;
-    align-items: flex-start;
-    gap: 62px;
-    position: relative;
-    flex: 0 0 auto;
+    width: 100%;
+    align-items: center;
+    gap: 15px;
 }
+
 
 .landing-page .img {
     position: relative;
-    width: 400px;
-    height: 474px;
+    width: 433px;
+    height: 475px;
     object-fit: cover;
+    border-radius: 50px;
+    margin-left: 7px;
+}
+
+div.sobreposicao-img1 {
+    content: "";
+    position: absolute;
+    width: 433px;
+    height: 475px;
+    top: 0px;
+    left: 7px;
+    border-radius: 50px;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+div.sobreposicao-img2 {
+    content: "";
+    position: absolute;
+    width: 433px;
+    height: 475px;
+    top: 0px;
+    left: 450px;
+    border-radius: 50px;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+div.sobreposicao-img3 {
+    content: "";
+    position: absolute;
+    width: 433px;
+    height: 475px;
+    top: 0px;
+    left: 895px;
+    border-radius: 50px;
+    background-color: rgba(0, 0, 0, 0.6);
 }
 
 .landing-page .los-angeles-grupo {
@@ -153,13 +199,12 @@
     gap: 6px;
     position: absolute;
     top: 360px;
-    left: 924px;
+    left: 854px;
 }
 
 .landing-page .text-wrapper-4 {
     position: relative;
     width: fit-content;
-    margin-top: -1px;
     font-family: "Open Sans-Bold", Helvetica;
     font-weight: 700;
     color: #ffffff;
@@ -169,11 +214,14 @@
     line-height: normal;
 }
 
-.landing-page .line {
-    position: relative;
-    width: 400.01px;
-    height: 1.47px;
-    object-fit: cover;
+.landing-page .text-wrapper-4::after {
+    content: "";
+    display: block;
+    width: 13em;
+    height: 1px;
+    margin: 0.2em auto 0.2em;
+    background-color: white;
+    justify-content: center;
 }
 
 .landing-page .text-wrapper-5 {
@@ -184,8 +232,6 @@
     color: #ffffff;
     font-size: 20px;
     text-align: center;
-    letter-spacing: 0;
-    line-height: normal;
 }
 
 .landing-page .orlando-grupo {
@@ -196,7 +242,19 @@
     gap: 6px;
     position: absolute;
     top: 360px;
-    left: 0;
+    left: -42px;
+}
+
+.landing-page .orlando-grupo a {
+    text-decoration: none;
+}
+
+.landing-page .los-angeles-grupo a {
+    text-decoration: none;
+}
+
+.landing-page .las-vegas-grupo a {
+    text-decoration: none;
 }
 
 .landing-page .las-vegas-grupo {
@@ -207,29 +265,33 @@
     gap: 6px;
     position: absolute;
     top: 360px;
-    left: 462px;
+    left: 405px;
 }
 
 .landing-page .text-wrapper-6 {
-    position: absolute;
-    width: 335px;
-    top: 0;
-    left: 0;
     font-family: "Open Sans-SemiBold", Helvetica;
     font-weight: 600;
     color: #ff3f79;
     font-size: 40px;
-    text-align: center;
-    letter-spacing: 0;
-    line-height: normal;
+    text-align: left;
+    margin-left: 20px;
+    margin-top: 5px;
 }
 
 .landing-page .ver-todas-as-viagens {
     position: absolute;
-    width: 293px;
+    width: 100%;
     height: 38px;
     top: 593px;
     left: 1012px;
+}
+
+.landing-page .ver-todas-as-viagens a {
+    text-decoration: none;
+}
+
+.landing-page .ver-todas-as-viagens a:hover {
+    color: #ff3f79;
 }
 
 .landing-page .ver-todas-as-viagens-2 {
@@ -240,16 +302,11 @@
 }
 
 .landing-page .text-wrapper-7 {
-    position: relative;
-    width: fit-content;
-    margin-top: -1px;
     font-family: "Open Sans-Light", Helvetica;
     font-weight: 300;
     color: #000000;
     font-size: 28px;
-    text-align: center;
-    letter-spacing: 0;
-    line-height: normal;
+    text-align: left;
 }
 
 .landing-page .seta {
@@ -258,267 +315,145 @@
     height: 29px;
 }
 
-.landing-page .pagina-formulario {
+.formulario1 {
     position: absolute;
-    width: 1440px;
-    height: 1052px;
-    top: 2345px;
+    width: 100%;
+    top: 2500px;
+    margin-top: -100px;
+}
+
+.formulario2 {
+    position: absolute;
+    width: 100%;
+    top: 1400px;
     left: 0;
 }
 
-.landing-page .overlap-2 {
-    position: relative;
-    width: 1454px;
-    height: 1052px;
-}
-
-.landing-page .formulario {
+.formulario3 {
     position: absolute;
-    width: 1454px;
-    height: 1052px;
-    top: 0;
+    width: 100%;
+    top: 2100px;
     left: 0;
 }
 
-.landing-page .overlap-group-2 {
-    position: relative;
-    width: 1440px;
-    height: 1052px;
+.container-formulario {
     background-color: #f3f3f3;
-    border-radius: 50px;
+    padding: 40px 75px;
+    border-top-right-radius: 50px;
+    border-top-left-radius: 50px;
+    display: flex;
+    flex-flow: row-reverse wrap;
+    gap: 115px;
+    justify-content: center;
 }
 
-.landing-page .caixa-formulario {
-    position: absolute;
-    width: 770px;
-    height: 908px;
-    top: 41px;
-    left: 570px;
+.formulario-contato {
     background-color: #ffffff;
+    padding: 30px 50px 40px;
     border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
 }
 
-.landing-page .text-wrapper-8 {
-    position: absolute;
-    top: 70px;
-    left: 831px;
+.formulario-contato h2 {
     font-family: "Open Sans-SemiBold", Helvetica;
     font-weight: 600;
     color: #ff3f79;
     font-size: 40px;
-    letter-spacing: 0;
-    line-height: normal;
+    text-align: center;
 }
 
-.landing-page .text-wrapper-9 {
-    position: absolute;
-    width: 546px;
-    top: 132px;
-    left: 683px;
+.formulario-contato p {
     font-family: "Open Sans-Regular", Helvetica;
     font-weight: 400;
     color: #8e8e8e;
     font-size: 24px;
     text-align: center;
-    letter-spacing: 0;
-    line-height: normal;
+    margin-top: -20px;
 }
 
-.landing-page .caixa-nome {
-    position: absolute;
-    width: 674px;
-    height: 58px;
-    top: 229px;
-    left: 619px;
-    border-radius: 50px;
-    border: 1px solid;
-    border-color: #8e8e8e;
-}
-
-.landing-page .caixa-email {
-    position: absolute;
-    width: 674px;
-    height: 58px;
-    top: 333px;
-    left: 619px;
-    border-radius: 50px;
-    border: 1px solid;
-    border-color: #8e8e8e;
-}
-
-.landing-page .caixa-assunto {
-    position: absolute;
-    width: 674px;
-    height: 58px;
-    top: 437px;
-    left: 619px;
-    border-radius: 50px;
-    border: 1px solid;
-    border-color: #8e8e8e;
-}
-
-.landing-page .caixa-telefone {
-    position: absolute;
-    width: 674px;
-    height: 58px;
-    top: 541px;
-    left: 619px;
-    border-radius: 50px;
-    border: 1px solid;
-    border-color: #8e8e8e;
-}
-
-.landing-page .caixa-mensagem {
-    position: absolute;
-    width: 674px;
-    height: 186px;
-    top: 645px;
-    left: 619px;
-}
-
-.landing-page .text-wrapper-10 {
-    position: absolute;
-    top: 241px;
-    left: 640px;
+.formulario-contato button {
+    font-size: 24px;
     font-family: "Open Sans-Regular", Helvetica;
     font-weight: 400;
-    color: #8e8e8e;
-    font-size: 24px;
-    text-align: center;
-    letter-spacing: 0;
-    line-height: normal;
-}
-
-.landing-page .text-wrapper-11 {
-    position: absolute;
-    top: 345px;
-    left: 641px;
-    font-family: "Open Sans-Regular", Helvetica;
-    font-weight: 400;
-    color: #8e8e8e;
-    font-size: 24px;
-    text-align: center;
-    letter-spacing: 0;
-    line-height: normal;
-}
-
-.landing-page .text-wrapper-12 {
-    position: absolute;
-    top: 449px;
-    left: 641px;
-    font-family: "Open Sans-Regular", Helvetica;
-    font-weight: 400;
-    color: #8e8e8e;
-    font-size: 24px;
-    text-align: center;
-    letter-spacing: 0;
-    line-height: normal;
-}
-
-.landing-page .text-wrapper-13 {
-    position: absolute;
-    top: 553px;
-    left: 639px;
-    font-family: "Open Sans-Regular", Helvetica;
-    font-weight: 400;
-    color: #8e8e8e;
-    font-size: 24px;
-    text-align: center;
-    letter-spacing: 0;
-    line-height: normal;
-}
-
-.landing-page .text-wrapper-14 {
-    position: absolute;
-    top: 657px;
-    left: 640px;
-    font-family: "Open Sans-Regular", Helvetica;
-    font-weight: 400;
-    color: #8e8e8e;
-    font-size: 24px;
-    text-align: center;
-    letter-spacing: 0;
-    line-height: normal;
-}
-
-.landing-page .botao {
-    display: inline-flex;
-    align-items: flex-start;
-    position: absolute;
-    top: 865px;
-    left: 894px;
-    border-radius: 50px;
-}
-
-.landing-page .enviar-wrapper {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
-    padding: 8px 28px;
-    position: relative;
-    flex: 0 0 auto;
-    background-color: #ff3f79;
-    border-radius: 20px;
-}
-
-.landing-page .enviar {
-    position: relative;
-    width: fit-content;
-    margin-top: -4px;
-    font-family: "Roboto-SemiBold", Helvetica;
-    font-weight: 600;
     color: #ffffff;
-    font-size: 24px;
-    letter-spacing: 0;
-    line-height: normal;
-    white-space: nowrap;
+    background-color: #ff3f79;
+    border: none;
+    border-radius: 20px;
+    padding: 8px 30px;
 }
 
-.landing-page .onde-nos-encontrar {
+.formulario-contato textarea {
+    font-family: "Open Sans-Regular", Helvetica;
+    font-weight: 400;
+    color: #000000;
+    font-size: 24px;
+    border-radius: 50px;
+    border: 1px solid;
+    border-color: #8e8e8e;
+    padding: 25px;
+    display: block;
+    margin-bottom: 40px;
+    width: 100%;
+    box-sizing: border-box;
+    resize: none;
+}
+
+.formulario-contato input {
+    font-family: "Open Sans-Regular", Helvetica;
+    font-weight: 400;
+    color: #000000;
+    font-size: 24px;
+    width: 100%;
+    height: 58px;
+    border-radius: 50px;
+    border: 1px solid;
+    border-color: #8e8e8e;
+    padding-left: 25px;
+    display: block;
+    margin-bottom: 40px;
+    box-sizing: border-box;
+}
+
+.formulario-contato input::placeholder {
+    color: #8e8e8e;
+}
+
+.formulario-contato textarea::placeholder {
+    color: #8e8e8e;
+}
+
+.onde-nos-encontrar {
     display: flex;
     flex-direction: column;
-    width: 387px;
     align-items: center;
-    gap: 36px;
-    position: absolute;
-    top: 240px;
-    left: 68px;
+    gap: 20px;
+    justify-content: center;
 }
 
-.landing-page .icone-rodape {
-    position: relative;
+.icone-rodape {
     width: 172px;
     height: 170px;
 }
 
-.landing-page .onde-nos-encontrar-2 {
-    position: relative;
-    width: 391px;
-    height: 204.58px;
-    margin-right: -4px;
+.onde-nos-encontrar h2 {
+    font-family: "Open Sans-SemiBold", Helvetica;
+    font-weight: 600;
+    color: #ff3f79;
+    font-size: 40px;
+    margin: 0px;
 }
 
-.landing-page .social-media {
-    position: absolute;
-    width: 76px;
-    height: 32px;
-    top: 173px;
-    left: 156px;
-}
-
-.landing-page .contato {
-    position: absolute;
-    width: 352px;
-    top: 71px;
-    left: 17px;
+.onde-nos-encontrar p {
     font-family: "Open Sans-Light", Helvetica;
     font-weight: 300;
     color: #000000;
     font-size: 24px;
     text-align: center;
-    letter-spacing: 0;
-    line-height: 25px;
+    line-height: 40px;
+    margin: 0px;
 }
 
 .landing-page .text-wrapper-15 {
@@ -535,17 +470,17 @@
 
 .landing-page .galeria-de-fotos {
     position: absolute;
-    width: 1328px;
+    width: 100%;
     height: 804px;
-    top: 1470px;
-    left: 58px;
+    top: 1500px;
+    left: 13px;
 }
 
 .landing-page .text-wrapper-16 {
     position: absolute;
     width: 307px;
     top: 0;
-    left: 0;
+    left: 10px;
     font-family: "Open Sans-SemiBold", Helvetica;
     font-weight: 600;
     color: #ff3f79;
@@ -562,6 +497,7 @@
     width: 320px;
     height: 322px;
     object-fit: cover;
+    border-radius: 50px;
 }
 
 .landing-page .galeria-2 {
@@ -571,6 +507,7 @@
     width: 320px;
     height: 322px;
     object-fit: cover;
+    border-radius: 50px;
 }
 
 .landing-page .galeria-3 {
@@ -580,6 +517,7 @@
     width: 320px;
     height: 322px;
     object-fit: cover;
+    border-radius: 50px;
 }
 
 .landing-page .galeria-4 {
@@ -589,6 +527,7 @@
     width: 320px;
     height: 322px;
     object-fit: cover;
+    border-radius: 50px;
 }
 
 .landing-page .galeria-5 {
@@ -598,6 +537,7 @@
     width: 320px;
     height: 322px;
     object-fit: cover;
+    border-radius: 50px;
 }
 
 .landing-page .galeria-6 {
@@ -607,6 +547,7 @@
     width: 320px;
     height: 322px;
     object-fit: cover;
+    border-radius: 50px;
 }
 
 .landing-page .galeria-7 {
@@ -616,23 +557,41 @@
     width: 320px;
     height: 322px;
     object-fit: cover;
+    border-radius: 50px;
+}
+
+.container {
+    position: relative;
+    display: inline-block;
 }
 
 .landing-page .div-wrapper {
     position: absolute;
     width: 320px;
     height: 322px;
-    top: 418px;
+    top: 405px;
     left: 1004px;
     background-image: url(img/galeria8.jpg);
     background-size: cover;
     background-position: 50% 50%;
+    border-radius: 50px;
+}
+
+div.sobreposicao-galeria {
+    content: "";
+    position: absolute;
+    width: 320px;
+    height: 322px;
+    top: 405px;
+    left: 1004px;
+    border-radius: 50px;
+    background-color: rgba(0, 0, 0, 0.6);
 }
 
 .landing-page .text-wrapper-17 {
     position: absolute;
-    top: 117px;
-    left: 86px;
+    top: 540px;
+    left: 1085px;
     font-family: "Open Sans-SemiBold", Helvetica;
     font-weight: 600;
     color: #ffffff;
@@ -650,4 +609,580 @@
     position: absolute;
     top: 766px;
     left: 1045px;
+}
+
+.landing-page .ver-todas-as-fotos a {
+    text-decoration: none;
+}
+
+.landing-page .ver-todas-as-fotos a:hover {
+    color: #ff3f79;
+}
+
+/* minhas viagens */
+
+.minhas-viagens .cabecalho {
+    display: flex;
+    height: 80px;
+    align-items: center;
+    border-bottom: 1px solid #8e8e8e;
+    justify-content: space-between;
+    padding-inline: 30px;
+}
+
+.minhas-viagens .retangulo-cabecalho {
+    position: relative;
+    width: 100%;
+    height: 80px;
+    background-color: #ffffff;
+}
+
+.minhas-viagens .itens-cabecalho {
+    display: inline-flex;
+    align-items: flex-end;
+    vertical-align: middle;
+}
+
+.minhas-viagens .cabecalho .logo {
+    display: inline-block;
+    width: 72px;
+    height: 72px;
+    align-items: flex-start;
+}
+
+.minhas-viagens .navbar li {
+    display: inline-block;
+    padding: 10px;
+    justify-content: space-between;
+}
+
+.minhas-viagens .navbar li a {
+    text-decoration: none;
+    color: #000000;
+}
+
+.minhas-viagens .navbar li a:hover {
+    color: #ff3f79;
+}
+
+.minhas-viagens .text-wrapper-2 {
+    width: fit-content;
+    font-family: "Open Sans-Regular", Helvetica;
+    font-weight: 400;
+    color: #ff3f79;
+    font-size: 24px;
+}
+
+.minhas-viagens .text-wrapper-3 {
+    position: relative;
+    width: fit-content;
+    font-family: "Open Sans-Regular", Helvetica;
+    font-weight: 400;
+    color: #000000;
+    font-size: 24px;
+}
+
+.landing-page .overlap-4 {
+    position: absolute;
+    width: 100%;
+    height: 804px;
+    top: 100px;
+    left: 100px;
+    align-items: center;
+}
+
+.landing-page .viagens {
+    position: absolute;
+    width: 100%;
+    height: 500px;
+    background-color: transparent;
+}
+
+.landing-page .texto-viagens {
+    position: absolute;
+    width: 100%;
+    top: 40px;
+    left: 25px;
+    font-family: "Open Sans-SemiBold", Helvetica;
+    font-weight: 600;
+    color: #ff3f79;
+    font-size: 40px;
+    text-align: left;
+}
+
+.landing-page .p-2 {
+    font-family: "Open Sans-Light", Helvetica;
+    font-weight: 300;
+    color: #000000;
+    font-size: 24px;
+    margin-top: 100px;
+    margin-left: 25px;
+}
+
+.landing-page .frame-2 {
+    width: 100%;
+    position: absolute;
+    object-fit: cover;
+    border-radius: 50px;
+    top: -10px;
+}
+
+.landing-page .img-1 {
+    top: 80px;
+    left: -80px;
+    position: absolute;
+    width: 650px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 50px;
+}
+
+div.sobreposicao-orlando {
+    content: "";
+    position: absolute;
+    width: 650px;
+    height: 250px;
+    top: 80px;
+    left: -80px;
+    border-radius: 50px;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.landing-page .img-2 {
+    top: 80px;
+    left: 590px;
+    position: absolute;
+    width: 650px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 50px;
+}
+
+div.sobreposicao-las-vegas {
+    content: "";
+    position: absolute;
+    width: 650px;
+    height: 250px;
+    top: 80px;
+    left: 590px;
+    border-radius: 50px;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.landing-page .img-3 {
+    top: 350px;
+    left: -80px;
+    position: absolute;
+    width: 650px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 50px;
+}
+
+div.sobreposicao-los-angeles {
+    content: "";
+    position: absolute;
+    width: 650px;
+    height: 250px;
+    top: 350px;
+    left: -80px;
+    border-radius: 50px;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+ 
+.landing-page .img-4 {
+    top: 350px;
+    left: 590px;
+    position: absolute;
+    width: 650px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 50px;
+}
+
+div.sobreposicao-rio-de-janeiro {
+    content: "";
+    position: absolute;
+    width: 650px;
+    height: 250px;
+    top: 350px;
+    left: 590px;
+    border-radius: 50px;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.landing-page .img-5 {
+    top: 620px;
+    left: -80px;
+    position: absolute;
+    width: 650px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 50px;
+}
+
+div.sobreposicao-foz-do-iguacu {
+    content: "";
+    position: absolute;
+    width: 650px;
+    height: 250px;
+    top: 620px;
+    left: -80px;
+    border-radius: 50px;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.landing-page .img-6 {
+    top: 620px;
+    left: 590px;
+    position: absolute;
+    width: 650px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 50px;
+}
+
+div.sobreposicao-tokyo {
+    content: "";
+    position: absolute;
+    width: 650px;
+    height: 250px;
+    top: 620px;
+    left: 590px;
+    border-radius: 50px;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.landing-page .img-7 {
+    top: 890px;
+    left: -80px;
+    position: absolute;
+    width: 650px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 50px;
+}
+
+div.sobreposicao-santorini {
+    content: "";
+    position: absolute;
+    width: 650px;
+    height: 250px;
+    top: 890px;
+    left: -80px;
+    border-radius: 50px;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.landing-page .img-8 {
+    top: 890px;
+    left: 590px;
+    position: absolute;
+    width: 650px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 50px;
+}
+
+div.sobreposicao-milao {
+    content: "";
+    position: absolute;
+    width: 650px;
+    height: 250px;
+    top: 890px;
+    left: 590px;
+    border-radius: 50px;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.landing-page .texto-img1 {
+    position: absolute;
+    top: 173px;
+    left: 77px;
+    font-family: "Open Sans-SemiBold", Helvetica;
+    font-weight: 600;
+    color: #ffffff;
+    font-size: 64px;
+    text-align: center;
+}
+
+.landing-page .texto-img2 {
+    position: absolute;
+    top: 173px;
+    left: 730px;
+    font-family: "Open Sans-SemiBold", Helvetica;
+    font-weight: 600;
+    color: #ffffff;
+    font-size: 64px;
+    text-align: center;
+}
+
+.landing-page .texto-img3 {
+    position: absolute;
+    top: 442px;
+    left: 15px;
+    font-family: "Open Sans-SemiBold", Helvetica;
+    font-weight: 600;
+    color: #ffffff;
+    font-size: 64px;
+    text-align: center;
+}
+
+.landing-page .texto-img4 {
+    position: absolute;
+    top: 442px;
+    left: 655px;
+    font-family: "Open Sans-SemiBold", Helvetica;
+    font-weight: 600;
+    color: #ffffff;
+    font-size: 64px;
+    text-align: center;
+}
+
+.landing-page .texto-img5 {
+    position: absolute;
+    top: 710px;
+    left: -15px;
+    font-family: "Open Sans-SemiBold", Helvetica;
+    font-weight: 600;
+    color: #ffffff;
+    font-size: 64px;
+    text-align: center;
+}
+
+.landing-page .texto-img6 {
+    position: absolute;
+    top: 710px;
+    left: 785px;
+    font-family: "Open Sans-SemiBold", Helvetica;
+    font-weight: 600;
+    color: #ffffff;
+    font-size: 64px;
+    text-align: center;
+}
+
+.landing-page .texto-img7 {
+    position: absolute;
+    top: 980px;
+    left: 65px;
+    font-family: "Open Sans-SemiBold", Helvetica;
+    font-weight: 600;
+    color: #ffffff;
+    font-size: 64px;
+    text-align: center;
+}
+
+.landing-page .texto-img8 {
+    position: absolute;
+    top: 980px;
+    left: 814px;
+    font-family: "Open Sans-SemiBold", Helvetica;
+    font-weight: 600;
+    color: #ffffff;
+    font-size: 64px;
+    text-align: center;
+}
+
+.landing-page .texto-group a {
+    text-decoration: none;
+}
+
+/* página viagem */
+.landing-page .header-viagem {
+    position: absolute;
+    width: 100%;
+    height: 800px;
+    background-color: transparent;
+}
+
+.landing-page .imagem-viagem-orlando {
+    width: 100%;
+    height: 700px;
+    background-image: url(img/imagem-orlando-header.jpg);
+    background-size: 100% 100%;
+    border-bottom-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+}
+
+.landing-page .imagem-viagem-las-vegas {
+    width: 100%;
+    height: 700px;
+    background-image: url(img/imagem-las-vegas-header.jpg);
+    background-size: 100% 100%;
+    border-bottom-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+}
+
+.landing-page .imagem-viagem-los-angeles {
+    width: 100%;
+    height: 700px;
+    background-image: url(img/imagem-los-angeles-header.jpg);
+    background-size: 100% 100%;
+    border-bottom-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+}
+
+.landing-page .imagem-viagem-rio-de-janeiro {
+    width: 100%;
+    height: 700px;
+    background-image: url(img/imagem-rio-de-janeiro.jpg);
+    background-size: 100% 100%;
+    border-bottom-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+}
+
+.landing-page .imagem-viagem-foz-do-iguacu {
+    width: 100%;
+    height: 700px;
+    background-image: url(img/imagem-foz-header.jpg);
+    background-size: 100% 100%;
+    border-bottom-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+}
+
+.landing-page .imagem-viagem-toquio {
+    width: 100%;
+    height: 700px;
+    background-image: url(img/imagem-tokyo-header.jpg);
+    background-size: 100% 100%;
+    border-bottom-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+}
+
+.landing-page .imagem-viagem-santorini {
+    width: 100%;
+    height: 700px;
+    background-image: url(img/imagem-santorini-header.jpg);
+    background-size: 100% 100%;
+    border-bottom-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+}
+
+.landing-page .imagem-viagem-milao {
+    width: 100%;
+    height: 700px;
+    background-image: url(img/imagem-milao-header.jpg);
+    background-size: 100% 100%;
+    border-bottom-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+}
+
+.landing-page .fotos-viagem {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    position: absolute;
+    top: 1350px;
+    margin-left: 50px;
+}
+
+.landing-page .texto-galeria {
+    position: absolute;
+    width: 100%;
+    top: 1200px;
+    left: 25px;
+    font-family: "Open Sans-SemiBold", Helvetica;
+    font-weight: 600;
+    color: #ff3f79;
+    font-size: 40px;
+    text-align: left;
+}
+
+.landing-page .frame-3 {
+    display: flex;
+    width: 100%;
+    align-items: flex-start;
+    gap: 15px;
+    margin-top: -65px;
+}
+
+.landing-page .img3 {
+    position: relative;
+    width: 430px;
+    height: 474px;
+    object-fit: cover;
+    border-radius: 50px;
+    left: -36px;
+}
+
+.landing-page .legenda-1 {
+    position: relative;
+    width: 380px;
+    height: auto;
+    text-align: center;
+    font-family: "Open Sans-Regular", Helvetica;
+    font-weight: 300;
+    color: #8e8e8e;
+    font-size: 24px;
+    margin-left: -965px;
+    text-align: justify;
+}
+
+.landing-page .legenda-2 {
+    position: relative;
+    width: 380px;
+    height: auto;
+    text-align: center;
+    font-family: "Open Sans-Regular", Helvetica;
+    font-weight: 300;
+    color: #8e8e8e;
+    font-size: 24px;
+    margin-top: -228px;
+    margin-left: -82px;
+    text-align: justify;
+}
+
+.landing-page .legenda-3 {
+    position: relative;
+    width: 380px;
+    height: auto;
+    text-align: center;
+    font-family: "Open Sans-Regular", Helvetica;
+    font-weight: 300;
+    color: #8e8e8e;
+    font-size: 24px;
+    margin-top: -228px;
+    margin-left: 812px;
+    text-align: justify;
+}
+
+.landing-page .resumo-viagem {
+    position: absolute;
+    width: 100%;
+    height: 500px;
+    background-color: transparent;
+}
+
+.landing-page .titulo-viagem {
+    position: absolute;
+    width: 100%;
+    top: 750px;
+    left: 25px;
+    font-family: "Open Sans-SemiBold", Helvetica;
+    font-weight: 600;
+    color: #ff3f79;
+    font-size: 40px;
+    text-align: left;
+}
+
+.landing-page .p-3 {
+    font-family: "Open Sans-Regular", Helvetica;
+    font-weight: 300;
+    color: #000000;
+    font-size: 22px;
+    margin-top: 805px;
+    margin-left: 25px;
+}
+
+.landing-page .descricao-viagem {
+    font-family: "Open Sans-Regular", Helvetica;
+    font-weight: 300;
+    color: #000000;
+    width: 96%;
+    text-align: justify;
+    font-size: 24px;
+    margin-top: 50px;
+    margin-left: 25px;
 }
